@@ -4,14 +4,14 @@ using HarmonyLib;
 using ResoniteModLoader;
 using ResoniteHotReloadLib;
 
-namespace DeviousHarmonyPatch;
-public class DeviousHarmonyPatch : ResoniteMod {
+namespace ExampleMod;
+public class ExampleMod : ResoniteMod {
 
     public override string Name => "ExampleMod";
-    public override string Author => "WattleFoxxo (wattle@wattlefoxxo.au)";
+    public override string Author => "John Example";
     public override string Version => "0.1.0";
-    public override string Link => "https://www.wattlefoxxo.au/";
-    const string HarmonyId = "au.wattlefoxxo.ExampleMod";
+    public override string Link => "https://github.com/WattleFoxxo/ResoniteModExample/";
+    const string HarmonyId = "com.example.ExampleMod";
 
     [AutoRegisterConfigKey]
     private static readonly ModConfigurationKey<bool> enabled = new ModConfigurationKey<bool>("enabled", "Should the mod be enabled", () => true);
